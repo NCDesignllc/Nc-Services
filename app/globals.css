@@ -1,0 +1,201 @@
+/* Global CSS Reset & Variables */
+:root {
+    /* Color Palette */
+    --color-primary: #051937;
+    /* Deep Navy */
+    --color-secondary: #0A2647;
+    /* Lighter Navy */
+    --color-accent: #DAA520;
+    /* Gold */
+    --color-accent-hover: #B8860B;
+    --color-text-main: #FFFFFF;
+    --color-text-muted: #CBD5E1;
+    --color-glass: rgba(255, 255, 255, 0.05);
+
+    /* Fonts */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Spacing */
+    --nav-height: 80px;
+    --container-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+
+/* Utilities */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.glass {
+    background: var(--color-glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+/* Layout Specifics */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--nav-height);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font-heading);
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a:hover {
+    color: var(--color-accent);
+}
+
+.cta-btn {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .cta-btn {
+        display: inline-block;
+    }
+}
+
+main {
+    padding-top: var(--nav-height);
+    flex: 1;
+}
+
+.site-footer {
+    background-color: var(--color-secondary);
+    padding: 3rem 0;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
+
+.footer-col h4 {
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+}
+
+.footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-col a {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.footer-col a:hover {
+    color: var(--color-accent);
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
