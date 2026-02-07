@@ -1,0 +1,157 @@
+{
+  "coreAgents": [
+    {
+      "id": "project-planner",
+      "name": "Project Planner Agent",
+      "purpose": "Define the scope of work, deliverables, and timelines.",
+      "tasks": [
+        "Ask discovery questions about the business",
+        "Create a project brief",
+        "Generate milestones and task lists"
+      ],
+      "examplePrompt": "Interview the user about their business services and goals. Produce a project outline including sitemap, pages, features, and deadlines."
+    },
+    {
+      "id": "brand-messaging",
+      "name": "Brand & Messaging Agent",
+      "purpose": "Define tone, value proposition, tagline, and copy style.",
+      "tasks": [
+        "Generate brand voice guidelines",
+        "Write headlines and service descriptions",
+        "Create an SEO keyword strategy"
+      ],
+      "examplePrompt": "Write compelling website copy for a service provider, emphasizing trust, expertise, and local SEO keywords."
+    },
+    {
+      "id": "design",
+      "name": "Design Agent",
+      "purpose": "Create visual mockups and UI direction.",
+      "tasks": [
+        "Suggest a color palette and typography",
+        "Produce wireframes",
+        "Export UI mockups"
+      ],
+      "examplePrompt": "Generate a homepage and service page mockup layout with visual hierarchy for a professional service business."
+    },
+    {
+      "id": "content",
+      "name": "Content Agent",
+      "purpose": "Create all textual content for pages.",
+      "tasks": [
+        "Compose the homepage and about section",
+        "Write service, FAQ, and contact pages",
+        "Draft blog posts for SEO"
+      ],
+      "examplePrompt": "Write service page content focusing on benefits, customer pain points, and clear calls‑to‑action."
+    },
+    {
+      "id": "technical-build",
+      "name": "Technical Build Agent",
+      "purpose": "Build the site and integrate a content management system.",
+      "tasks": [
+        "Select a platform (e.g., Webflow, Wix, or WordPress)",
+        "Generate HTML/CSS/JS code",
+        "Set up forms and booking widgets"
+      ],
+      "examplePrompt": "Create a responsive website using the selected platform. Build pages based on provided mockups and include SEO metadata."
+    },
+    {
+      "id": "seo-analytics",
+      "name": "SEO & Analytics Agent",
+      "purpose": "Optimize the site for search and performance tracking.",
+      "tasks": [
+        "Perform on‑page SEO (titles, meta descriptions, structured data)",
+        "Set up analytics and search console",
+        "Conduct performance auditing"
+      ],
+      "examplePrompt": "Audit the website content and provide SEO optimization recommendations including internal links and structured data."
+    },
+    {
+      "id": "qa-accessibility",
+      "name": "QA & Accessibility Agent",
+      "purpose": "Test the site before launch.",
+      "tasks": [
+        "Check responsiveness and broken links",
+        "Ensure accessibility compliance (WCAG)",
+        "Perform cross‑browser testing"
+      ],
+      "examplePrompt": "List issues and fixes for responsiveness, accessibility, and user experience on mobile and desktop."
+    },
+    {
+      "id": "client-handoff-training",
+      "name": "Client Handoff & Training Agent",
+      "purpose": "Prepare documentation and client guides.",
+      "tasks": [
+        "Create admin guides and deployment instructions",
+        "Write tutorials for content updates",
+        "Prepare client training manuals"
+      ],
+      "examplePrompt": "Generate a client training manual for updating content, tracking leads, and maintaining SEO."
+    }
+  ],
+  "optionalAgents": [
+    {
+      "id": "brand-asset",
+      "name": "Brand Asset Agent",
+      "purpose": "Create logos, iconography, and select images.",
+      "tasks": [
+        "Design or source logo variations",
+        "Create iconography set",
+        "Select and optimize images for web"
+      ],
+      "examplePrompt": "Create a professional logo and icon set that reflects the service business's brand identity and values."
+    },
+    {
+      "id": "copy-refinement",
+      "name": "Copy Refinement Agent",
+      "purpose": "Ensure tone consistency, grammar, and conversion optimization.",
+      "tasks": [
+        "Review all copy for tone consistency",
+        "Check grammar and readability",
+        "Optimize copy for conversions"
+      ],
+      "examplePrompt": "Review all website copy to ensure consistent tone, proper grammar, and effective calls-to-action that drive conversions."
+    },
+    {
+      "id": "legal-compliance",
+      "name": "Legal & Compliance Agent",
+      "purpose": "Draft privacy policy, terms of service, and ensure ADA compliance.",
+      "tasks": [
+        "Draft privacy policy",
+        "Create terms of service",
+        "Ensure ADA compliance"
+      ],
+      "examplePrompt": "Generate legally compliant privacy policy and terms of service documents, and verify ADA compliance requirements are met."
+    },
+    {
+      "id": "marketing-automation",
+      "name": "Marketing Automation Agent",
+      "purpose": "Set up email nurture flows and CRM integrations.",
+      "tasks": [
+        "Design email nurture sequences",
+        "Set up CRM integrations",
+        "Configure lead tracking and automation"
+      ],
+      "examplePrompt": "Create an email marketing automation sequence for new leads and integrate with popular CRM systems."
+    },
+    {
+      "id": "chatbot",
+      "name": "Chatbot Agent",
+      "purpose": "Develop AI chatbot scripts for FAQs and lead capture.",
+      "tasks": [
+        "Write chatbot conversation flows",
+        "Create FAQ response database",
+        "Set up lead capture forms in chat"
+      ],
+      "examplePrompt": "Develop an AI chatbot script that answers common questions about services and captures lead information naturally."
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "description": "AI-powered agent team for building and maintaining a professional website for NC Services",
+    "created": "2026-02-07",
+    "totalAgents": 13,
+    "coreAgentCount": 8,
+    "optionalAgentCount": 5
+  }
+}
