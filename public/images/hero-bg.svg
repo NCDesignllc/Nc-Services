@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1280" viewBox="0 0 1920 1280" role="img" aria-label="Abstract hero background">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050517"/>
+      <stop offset="0.6" stop-color="#050517"/>
+      <stop offset="1" stop-color="#050517"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#cf5c36" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#cf5c36" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#cf5c36" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1280" fill="url(#base)"/>
+  <rect width="1920" height="1280" fill="url(#glow)"/>
+  <path d="M0 860 C 380 760, 720 980, 1080 900 C 1380 820, 1640 680, 1920 720 L 1920 1280 L 0 1280 Z" fill="#050517" opacity="0.85"/>
+  <path d="M0 620 C 320 520, 720 660, 1080 600 C 1440 540, 1680 420, 1920 460 L 1920 1280 L 0 1280 Z" fill="#cf5c36" opacity="0.08"/>
+  <circle cx="1520" cy="260" r="180" fill="#cf5c36" opacity="0.12"/>
+  <circle cx="220" cy="220" r="140" fill="#ffffff" opacity="0.06"/>
+</svg>

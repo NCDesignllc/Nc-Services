@@ -1,16 +1,26 @@
 /* Global CSS Reset & Variables */
 :root {
     /* Color Palette */
-    --color-primary: #051937;
-    /* Deep Navy */
-    --color-secondary: #0A2647;
-    /* Lighter Navy */
-    --color-accent: #DAA520;
-    /* Gold */
-    --color-accent-hover: #B8860B;
-    --color-text-main: #FFFFFF;
-    --color-text-muted: #CBD5E1;
-    --color-glass: rgba(255, 255, 255, 0.05);
+    --ink-black: #050517;
+    --spicy-paprika: #cf5c36;
+    --apricot-cream: #efc88b;
+    --vanilla-custard: #ffffff;
+    --alabaster-grey: #d3d5d7;
+
+    --color-primary: var(--ink-black);
+    --color-secondary: var(--spicy-paprika);
+    --color-accent: var(--spicy-paprika);
+    --color-accent-hover: var(--apricot-cream);
+    --color-text-main: var(--vanilla-custard);
+    --color-text-muted: var(--alabaster-grey);
+    --color-glass: rgba(5, 5, 23, 0.55);
+    --color-surface: var(--vanilla-custard);
+    --color-surface-alt: var(--apricot-cream);
+    --color-text-dark: var(--ink-black);
+    --color-text-dark-muted: rgba(5, 5, 23, 0.7);
+    --color-border: rgba(211, 213, 215, 0.35);
+    --color-border-strong: rgba(211, 213, 215, 0.6);
+    --color-border-light: rgba(5, 5, 23, 0.15);
 
     /* Fonts */
     --font-heading: 'Outfit', sans-serif;
@@ -77,7 +87,7 @@ button {
     background: var(--color-glass);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .btn {
@@ -156,7 +166,7 @@ main {
     background-color: var(--color-secondary);
     padding: 3rem 0;
     margin-top: auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--color-border);
 }
 
 .footer-grid {
@@ -194,7 +204,7 @@ main {
 .footer-bottom {
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid var(--color-border);
     text-align: center;
     font-size: 0.8rem;
     color: var(--color-text-muted);

@@ -19,7 +19,7 @@
 
 /* Left Orange Panel */
 .heroLeft {
-    background: #e89830;
+    background: var(--color-accent);
     padding: 3rem 2rem;
     position: relative;
     display: flex;
@@ -50,7 +50,7 @@
         transform-origin: center center;
         font-size: 1.5rem;
         font-weight: 800;
-        color: rgba(255, 255, 255, 0.3);
+        color: rgba(255, 255, 255, 0.35);
         white-space: nowrap;
         letter-spacing: 2px;
         text-transform: uppercase;
@@ -58,7 +58,7 @@
 }
 
 .heroForm {
-    background: white;
+    background: var(--color-surface);
     padding: 2rem;
     border-radius: 8px;
     width: 100%;
@@ -68,14 +68,14 @@
 
 .formTitle {
     font-size: 1.25rem;
-    color: #333;
+    color: var(--color-text-dark);
     margin-bottom: 0.5rem;
     font-weight: 700;
 }
 
 .formSubtitle {
     font-size: 0.85rem;
-    color: #666;
+    color: var(--color-text-dark-muted);
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
@@ -88,20 +88,20 @@
 
 .bookingForm input {
     padding: 0.875rem 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-border-light);
     border-radius: 4px;
     font-size: 0.95rem;
-    color: #333;
+    color: var(--color-text-dark);
 }
 
 .bookingForm input:focus {
     outline: none;
-    border-color: #e89830;
+    border-color: var(--color-accent);
 }
 
 .submitBtn {
-    background: #333;
-    color: white;
+    background: var(--color-text-dark);
+    color: var(--color-text-main);
     padding: 0.875rem;
     border: none;
     border-radius: 4px;
@@ -112,7 +112,7 @@
 }
 
 .submitBtn:hover {
-    background: #222;
+    background: var(--color-primary);
 }
 
 .ratingBadge {
@@ -121,26 +121,26 @@
     gap: 0.75rem;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--color-border-light);
 }
 
 .stars {
-    color: #e89830;
+    color: var(--color-accent);
     font-size: 0.9rem;
 }
 
 .ratingText {
     font-size: 0.75rem;
-    color: #888;
+    color: var(--color-text-dark-muted);
     line-height: 1.4;
 }
 
 /* Right Content Panel */
 .heroRight {
     flex: 1;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('/images/hero-bg.jpg') center/cover;
-    background-color: #1a1a2e;
+    background: linear-gradient(rgba(5, 5, 23, 0.55), rgba(5, 5, 23, 0.55)),
+        url('/images/hero-bg.svg') center/cover;
+    background-color: var(--color-primary);
     display: flex;
     align-items: center;
     padding: 3rem 2rem;
@@ -157,7 +157,7 @@
 }
 
 .heroLocation {
-    color: #e89830;
+    color: var(--color-accent);
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
@@ -165,7 +165,7 @@
 
 .heroTitle {
     font-size: 2.5rem;
-    color: white;
+    color: var(--color-text-main);
     margin-bottom: 0.5rem;
     line-height: 1.1;
 }
@@ -177,14 +177,14 @@
 }
 
 .heroTagline {
-    color: white;
+    color: var(--color-text-main);
     font-size: 1rem;
     margin-bottom: 1.5rem;
     font-weight: 500;
 }
 
 .heroDescription {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
@@ -198,13 +198,13 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    color: white;
+    color: var(--color-text-main);
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
 }
 
 .checkmark {
-    color: #e89830;
+    color: var(--color-accent);
     font-weight: bold;
 }
 
@@ -215,8 +215,8 @@
 }
 
 .btnPrimary {
-    background: #e89830;
-    color: white;
+    background: var(--color-accent);
+    color: var(--color-text-main);
     padding: 0.875rem 1.5rem;
     border-radius: 4px;
     font-weight: 600;
@@ -225,14 +225,14 @@
 }
 
 .btnPrimary:hover {
-    background: #d68520;
+    background: var(--color-accent-hover);
 }
 
 .btnSecondary {
     background: transparent;
-    color: white;
+    color: var(--color-text-main);
     padding: 0.875rem 1.5rem;
-    border: 2px solid white;
+    border: 2px solid var(--color-text-main);
     border-radius: 4px;
     font-weight: 600;
     text-decoration: none;
@@ -240,13 +240,13 @@
 }
 
 .btnSecondary:hover {
-    background: white;
-    color: #333;
+    background: var(--color-text-main);
+    color: var(--color-text-dark);
 }
 
 /* Customer Reviews Bar */
 .reviewsBar {
-    background: #f5f5f5;
+    background: var(--color-surface);
     padding: 3rem 20px;
 }
 
@@ -268,12 +268,12 @@
 
 .reviewsTitle h2 {
     font-size: 1.75rem;
-    color: #333;
+    color: var(--color-text-dark);
     margin-bottom: 0.5rem;
 }
 
 .reviewsTitle p {
-    color: #666;
+    color: var(--color-text-dark-muted);
     font-size: 0.9rem;
     line-height: 1.5;
 }
@@ -289,7 +289,7 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    background: white;
+    background: var(--color-surface);
     padding: 0.75rem 1.25rem;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
@@ -298,8 +298,8 @@
 .platformIcon {
     width: 36px;
     height: 36px;
-    background: #4285f4;
-    color: white;
+    background: var(--color-accent);
+    color: var(--color-text-main);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -310,17 +310,17 @@
 
 .platformName {
     font-size: 0.75rem;
-    color: #888;
+    color: var(--color-text-dark-muted);
     display: block;
 }
 
 .ratingStars {
-    color: #e89830;
+    color: var(--color-accent);
     font-size: 0.85rem;
 }
 
 .ratingStars span {
-    color: #333;
+    color: var(--color-text-dark);
     font-weight: 600;
     margin-left: 0.25rem;
 }
@@ -328,7 +328,7 @@
 /* Services Section */
 .servicesSection {
     padding: 4rem 20px;
-    background: white;
+    background: var(--color-surface);
 }
 
 .sectionHeader {
@@ -338,17 +338,17 @@
 
 .sectionTitle {
     font-size: 2rem;
-    color: #333;
+    color: var(--color-text-dark);
     margin-bottom: 0.5rem;
 }
 
 .titleAccent {
-    color: #e89830;
+    color: var(--color-accent);
     margin-right: 0.5rem;
 }
 
 .sectionSubtitle {
-    color: #666;
+    color: var(--color-text-dark-muted);
     font-size: 1rem;
 }
 
@@ -386,15 +386,15 @@
 }
 
 .serviceItem:hover .serviceIcon {
-    background: #e89830;
+    background: var(--color-accent);
 }
 
 .serviceIcon {
     width: 50px;
     height: 50px;
     min-width: 50px;
-    background: rgba(232, 152, 48, 0.15);
-    border: 1px solid rgba(232, 152, 48, 0.3);
+    background: rgba(207, 92, 54, 0.15);
+    border: 1px solid rgba(207, 92, 54, 0.3);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -405,7 +405,7 @@
 
 .serviceItem h3 {
     font-size: 0.9rem;
-    color: #333;
+    color: var(--color-text-dark);
     margin-bottom: 0.25rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -414,13 +414,13 @@
 
 .serviceItem p {
     font-size: 0.85rem;
-    color: #666;
+    color: var(--color-text-dark-muted);
     line-height: 1.4;
 }
 
 /* Scrolling Banner */
 .scrollingBanner {
-    background: #333;
+    background: var(--color-primary);
     padding: 1rem 0;
     overflow: hidden;
 }
@@ -442,7 +442,7 @@
 }
 
 .bannerTrack span {
-    color: white;
+    color: var(--color-text-main);
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -450,14 +450,14 @@
 }
 
 .bannerDot {
-    color: #e89830;
+    color: var(--color-accent);
 }
 
 /* CTA Section with Form */
 .ctaSection {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('/images/cta-bg.jpg') center/cover;
-    background-color: #1a1a2e;
+    background: linear-gradient(rgba(5, 5, 23, 0.7), rgba(5, 5, 23, 0.7)),
+        url('/images/cta-bg.svg') center/cover;
+    background-color: var(--color-primary);
     padding: 4rem 20px;
 }
 
@@ -478,17 +478,17 @@
 
 .ctaText h2 {
     font-size: 2rem;
-    color: white;
+    color: var(--color-text-main);
     margin-bottom: 1rem;
     line-height: 1.3;
 }
 
 .accentText {
-    color: #e89830;
+    color: var(--color-accent);
 }
 
 .ctaText p {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.85);
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
@@ -501,9 +501,9 @@
 
 .btnOutline {
     background: transparent;
-    color: white;
+    color: var(--color-text-main);
     padding: 0.875rem 1.5rem;
-    border: 2px solid #e89830;
+    border: 2px solid var(--color-accent);
     border-radius: 4px;
     font-weight: 600;
     text-decoration: none;
@@ -511,11 +511,11 @@
 }
 
 .btnOutline:hover {
-    background: #e89830;
+    background: var(--color-accent);
 }
 
 .ctaFormBox {
-    background: white;
+    background: var(--color-surface);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -523,13 +523,13 @@
 
 .ctaFormBox h3 {
     font-size: 1.25rem;
-    color: #333;
+    color: var(--color-text-dark);
     margin-bottom: 0.5rem;
 }
 
 .ctaFormBox > p {
     font-size: 0.85rem;
-    color: #666;
+    color: var(--color-text-dark-muted);
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
@@ -543,20 +543,20 @@
 
 .ctaForm input {
     padding: 0.75rem 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-border-light);
     border-radius: 4px;
     font-size: 0.9rem;
-    color: #333;
+    color: var(--color-text-dark);
 }
 
 .ctaForm input:focus {
     outline: none;
-    border-color: #e89830;
+    border-color: var(--color-accent);
 }
 
 .ctaForm button {
-    background: #e89830;
-    color: white;
+    background: var(--color-accent);
+    color: var(--color-text-main);
     padding: 0.875rem;
     border: none;
     border-radius: 4px;
@@ -567,35 +567,35 @@
 }
 
 .ctaForm button:hover {
-    background: #d68520;
+    background: var(--color-accent-hover);
 }
 
 .testimonialMini {
     padding-top: 1rem;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--color-border-light);
 }
 
 .miniStars {
-    color: #e89830;
+    color: var(--color-accent);
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
 
 .testimonialMini p {
     font-size: 0.85rem;
-    color: #333;
+    color: var(--color-text-dark);
     font-style: italic;
     margin-bottom: 0.25rem;
 }
 
 .testimonialMini span {
     font-size: 0.75rem;
-    color: #888;
+    color: var(--color-text-dark-muted);
 }
 
 /* Emergency Section */
 .emergencySection {
-    background: white;
+    background: var(--color-surface);
     padding: 4rem 20px;
 }
 
@@ -616,13 +616,13 @@
 
 .emergencyText h2 {
     font-size: 1.75rem;
-    color: #333;
+    color: var(--color-text-dark);
     margin-bottom: 1rem;
     line-height: 1.3;
 }
 
 .emergencyText p {
-    color: #666;
+    color: var(--color-text-dark-muted);
     line-height: 1.7;
     font-size: 0.95rem;
 }
@@ -637,10 +637,10 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    background: #f9f9f9;
+    background: var(--color-surface-alt);
     padding: 1rem 1.5rem;
     border-radius: 8px;
-    border: 1px solid #eee;
+    border: 1px solid var(--color-border-light);
 }
 
 .badgeIcon {
@@ -649,5 +649,5 @@
 
 .serviceBadge span:last-child {
     font-weight: 600;
-    color: #333;
+    color: var(--color-text-dark);
 }
